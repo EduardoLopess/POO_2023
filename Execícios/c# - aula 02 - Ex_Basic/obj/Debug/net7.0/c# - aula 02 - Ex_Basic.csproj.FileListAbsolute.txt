@@ -1,0 +1,15 @@
+C:\Users\dudul\OneDrive\Área de Trabalho\Programação Orientada a Objetos\c# - aula 02 - Ex_Basic\bin\Debug\net7.0\c# - aula 02 - Ex_Basic.exe
+C:\Users\dudul\OneDrive\Área de Trabalho\Programação Orientada a Objetos\c# - aula 02 - Ex_Basic\bin\Debug\net7.0\c# - aula 02 - Ex_Basic.deps.json
+C:\Users\dudul\OneDrive\Área de Trabalho\Programação Orientada a Objetos\c# - aula 02 - Ex_Basic\bin\Debug\net7.0\c# - aula 02 - Ex_Basic.runtimeconfig.json
+C:\Users\dudul\OneDrive\Área de Trabalho\Programação Orientada a Objetos\c# - aula 02 - Ex_Basic\bin\Debug\net7.0\c# - aula 02 - Ex_Basic.dll
+C:\Users\dudul\OneDrive\Área de Trabalho\Programação Orientada a Objetos\c# - aula 02 - Ex_Basic\bin\Debug\net7.0\c# - aula 02 - Ex_Basic.pdb
+C:\Users\dudul\OneDrive\Área de Trabalho\Programação Orientada a Objetos\c# - aula 02 - Ex_Basic\obj\Debug\net7.0\c# - aula 02 - Ex_Basic.csproj.AssemblyReference.cache
+C:\Users\dudul\OneDrive\Área de Trabalho\Programação Orientada a Objetos\c# - aula 02 - Ex_Basic\obj\Debug\net7.0\c# - aula 02 - Ex_Basic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dudul\OneDrive\Área de Trabalho\Programação Orientada a Objetos\c# - aula 02 - Ex_Basic\obj\Debug\net7.0\c# - aula 02 - Ex_Basic.AssemblyInfoInputs.cache
+C:\Users\dudul\OneDrive\Área de Trabalho\Programação Orientada a Objetos\c# - aula 02 - Ex_Basic\obj\Debug\net7.0\c# - aula 02 - Ex_Basic.AssemblyInfo.cs
+C:\Users\dudul\OneDrive\Área de Trabalho\Programação Orientada a Objetos\c# - aula 02 - Ex_Basic\obj\Debug\net7.0\c# - aula 02 - Ex_Basic.csproj.CoreCompileInputs.cache
+C:\Users\dudul\OneDrive\Área de Trabalho\Programação Orientada a Objetos\c# - aula 02 - Ex_Basic\obj\Debug\net7.0\c# - aula 02 - Ex_Basic.dll
+C:\Users\dudul\OneDrive\Área de Trabalho\Programação Orientada a Objetos\c# - aula 02 - Ex_Basic\obj\Debug\net7.0\refint\c# - aula 02 - Ex_Basic.dll
+C:\Users\dudul\OneDrive\Área de Trabalho\Programação Orientada a Objetos\c# - aula 02 - Ex_Basic\obj\Debug\net7.0\c# - aula 02 - Ex_Basic.pdb
+C:\Users\dudul\OneDrive\Área de Trabalho\Programação Orientada a Objetos\c# - aula 02 - Ex_Basic\obj\Debug\net7.0\c# - aula 02 - Ex_Basic.genruntimeconfig.cache
+C:\Users\dudul\OneDrive\Área de Trabalho\Programação Orientada a Objetos\c# - aula 02 - Ex_Basic\obj\Debug\net7.0\ref\c# - aula 02 - Ex_Basic.dll
