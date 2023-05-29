@@ -11,47 +11,6 @@ namespace ap2.Controller
             this.clientRepository = clientRepository;
         }
 
-        public void MenuClient()
-        {
-            bool exit = false;
-            while(!exit)
-            {
-                Console.WriteLine("===== Gerenciar Clientes =====");
-                Console.WriteLine("1. Listar Clientes");
-                Console.WriteLine("2. Adicionar Cliente");
-                Console.WriteLine("3. Atualizar Cliente");
-                Console.WriteLine("4. Excluir Cliente");
-                Console.WriteLine("0. Voltar ao Menu Principal");
-                Console.WriteLine("==============================");
-                Console.Write("Digite a opção desejada: ");
-                string opts = Console.ReadLine();
-                Console.WriteLine();
-
-                switch(opts)
-                {
-                     case "1":
-                        ListClients();
-                        break;
-                    case "2":
-                        AddClient();
-                        break;
-                    case "3":
-                        Update();
-                        break;
-                    case "4":
-                        Delete();
-                        break;
-                    case "0":
-                        exit = true;
-                        break;
-                    default:
-                        Console.WriteLine("Opção inválida. Tente novamente.");
-                        break;
-                }
-                Console.WriteLine();
-            }
-        }
-
         public void ListClients()
         {
             Console.WriteLine("===== Lista de Clientes =====");

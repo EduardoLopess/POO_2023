@@ -10,48 +10,7 @@ namespace ap2.Controller
         {
             this.productRepository = productRepository;
         }
-
-        public void MenuProductor()
-        {
-            bool exit = false;
-            while(!exit)
-            {
-                Console.WriteLine("===== Gerenciar Produtos =====");
-                Console.WriteLine("1. Listar Produtos");
-                Console.WriteLine("2. Adicionar Produto");
-                Console.WriteLine("3. Atualizar Produto");
-                Console.WriteLine("4. Excluir Produto");
-                Console.WriteLine("0. Voltar ao Menu Principal");
-                Console.WriteLine("==============================");
-                Console.Write("Digite a opção desejada: ");
-                string option = Console.ReadLine();
-                Console.WriteLine();
-
-                switch (option)
-                {
-                    case "1":
-                         AddProduct();
-                        break;
-                    case "2":
-                        ListProducts();
-                        break;
-                    case "3":
-                        Update();
-                        break;
-                    case "4":
-                        Delete();
-                        break;
-                    case "0":
-                        exit = true;
-                        break;
-                    default:
-                        Console.WriteLine("Opção inválida. Tente novamente.");
-                        break;
-                }
-                Console.WriteLine();
-            }
-        }
-
+        
         public void AddProduct()
         {
             Console.WriteLine("===== Adicionar Produto =====");

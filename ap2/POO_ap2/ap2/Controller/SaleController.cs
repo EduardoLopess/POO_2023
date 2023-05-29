@@ -16,53 +16,11 @@ namespace ap2.Controller
             this.productRepository = productRepository;
         }
 
-        public void MenuSale()
-        {
-            bool exit = false;
-            while (!exit)
-            {
-                Console.WriteLine("===== Gerenciar Vendas =====");
-                Console.WriteLine("1. Listar Vendas");
-                Console.WriteLine("2. Registrar Venda");
-                Console.WriteLine("3. Atualizar Venda");
-                Console.WriteLine("4. Excluir Venda");
-                Console.WriteLine("0. Voltar ao Menu Principal");
-                Console.WriteLine("============================");
-                Console.Write("Digite a opção desejada: ");
-                string option = Console.ReadLine();
-                Console.WriteLine();
-
-                switch (option)
-                {
-                    case "1":
-                        ListSales();
-                        break;
-                    case "2":
-                        AddSale();
-                        break;
-                    case "3":
-                        Update();
-                        break;
-                    case "4":
-                        Delete();
-                        break;
-                    case "0":
-                        exit = true;
-                        break;
-                    default:
-                        Console.WriteLine("Opção inválida. Tente novamente.");
-                        break;
-                }
-
-                Console.WriteLine();
-            }
-        }
-
         public void AddSale()
         {
            
             Console.WriteLine("===== Registrar Venda =====");
-            // Listar os clientes disponíveis
+            // Listar os clientes disponiveis
             Console.WriteLine("Clientes disponíveis:");
             var clients = clientRepository.GetAll();
             foreach (var cli in clients)
@@ -81,7 +39,7 @@ namespace ap2.Controller
                 return;
             }
 
-            // Listar os produtos disponíveis
+            // Listar os produtos disponiveis
             Console.WriteLine("Produtos disponíveis:");
             var products = productRepository.GetAll();
             foreach (var product in products)
