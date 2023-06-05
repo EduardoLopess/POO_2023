@@ -20,7 +20,7 @@ namespace ap2.Controller
         {
            
             Console.WriteLine("===== Registrar Venda =====");
-            // Listar os clientes disponiveis
+            // Listar os clientes 
             Console.WriteLine("Clientes disponíveis:");
             var clients = clientRepository.GetAll();
             foreach (var cli in clients)
