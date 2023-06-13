@@ -1,0 +1,15 @@
+C:\Users\dudul\OneDrive\Área de Trabalho\Programação Orientada a Objetos\c# - aula 05 - associações\associaçoes\bin\Debug\net7.0\associaçoes.exe
+C:\Users\dudul\OneDrive\Área de Trabalho\Programação Orientada a Objetos\c# - aula 05 - associações\associaçoes\bin\Debug\net7.0\associaçoes.deps.json
+C:\Users\dudul\OneDrive\Área de Trabalho\Programação Orientada a Objetos\c# - aula 05 - associações\associaçoes\bin\Debug\net7.0\associaçoes.runtimeconfig.json
+C:\Users\dudul\OneDrive\Área de Trabalho\Programação Orientada a Objetos\c# - aula 05 - associações\associaçoes\bin\Debug\net7.0\associaçoes.dll
+C:\Users\dudul\OneDrive\Área de Trabalho\Programação Orientada a Objetos\c# - aula 05 - associações\associaçoes\bin\Debug\net7.0\associaçoes.pdb
+C:\Users\dudul\OneDrive\Área de Trabalho\Programação Orientada a Objetos\c# - aula 05 - associações\associaçoes\obj\Debug\net7.0\associaçoes.csproj.AssemblyReference.cache
+C:\Users\dudul\OneDrive\Área de Trabalho\Programação Orientada a Objetos\c# - aula 05 - associações\associaçoes\obj\Debug\net7.0\associaçoes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dudul\OneDrive\Área de Trabalho\Programação Orientada a Objetos\c# - aula 05 - associações\associaçoes\obj\Debug\net7.0\associaçoes.AssemblyInfoInputs.cache
+C:\Users\dudul\OneDrive\Área de Trabalho\Programação Orientada a Objetos\c# - aula 05 - associações\associaçoes\obj\Debug\net7.0\associaçoes.AssemblyInfo.cs
+C:\Users\dudul\OneDrive\Área de Trabalho\Programação Orientada a Objetos\c# - aula 05 - associações\associaçoes\obj\Debug\net7.0\associaçoes.csproj.CoreCompileInputs.cache
+C:\Users\dudul\OneDrive\Área de Trabalho\Programação Orientada a Objetos\c# - aula 05 - associações\associaçoes\obj\Debug\net7.0\associaçoes.dll
+C:\Users\dudul\OneDrive\Área de Trabalho\Programação Orientada a Objetos\c# - aula 05 - associações\associaçoes\obj\Debug\net7.0\refint\associaçoes.dll
+C:\Users\dudul\OneDrive\Área de Trabalho\Programação Orientada a Objetos\c# - aula 05 - associações\associaçoes\obj\Debug\net7.0\associaçoes.pdb
+C:\Users\dudul\OneDrive\Área de Trabalho\Programação Orientada a Objetos\c# - aula 05 - associações\associaçoes\obj\Debug\net7.0\associaçoes.genruntimeconfig.cache
+C:\Users\dudul\OneDrive\Área de Trabalho\Programação Orientada a Objetos\c# - aula 05 - associações\associaçoes\obj\Debug\net7.0\ref\associaçoes.dll

@@ -14,7 +14,7 @@ namespace ap2.Data.Repository
         
         public void Create(Sale entity)
         {
-            //Verifica se os produtos ja existem no banco de dados(Evitar erro de ID duplicado)
+            //Arruma erro de possivel dado duplicado
             var existingProducts = context.Set<Product>().AsEnumerable()
                 .Where(p => entity.Products.Any(ep => ep.ProductId == p.ProductId)).ToList();
 
