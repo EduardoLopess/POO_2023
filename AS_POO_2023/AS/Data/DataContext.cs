@@ -19,6 +19,7 @@ namespace Data
         public DbSet<Livro> Livros { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Emprestimo> Emprestimos { get; set; }
+        public DbSet<Autor> Autors { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
