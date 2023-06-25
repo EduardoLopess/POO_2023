@@ -1,33 +1,46 @@
 using Domain.Entities;
 using Domain.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace Data.Repository
 {
     public class AutorRepository : IAutorRepository
     {
-        public void Create(Autor entity)
+        private readonly DbContext _context;
+        public AutorRepository(DbContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
         }
 
-        public void Delete(int entityId)
+        public void Create(Autor entity)
         {
-            throw new NotImplementedException();
+            _context.Add(entity);
+            _context.SaveChanges();
         }
 
         public IList<Autor> GetAll()
         {
-            throw new NotImplementedException();
+            return _context.Set<Autor>()
+                .Include(l => l.Livros).ToList();
         }
 
         public Autor GetById(int entityId)
         {
-            throw new NotImplementedException();
+            return _context.Set<Autor>()
+                .Include(l => l.Livros)
+                .SingleOrDefault(i => i.Id == entityId);
+        }
+
+        public void Delete(int entityId)
+        {
+            _context.Set<Autor>().Remove(GetById(entityId));
+            _context.SaveChanges();
         }
 
         public void Update(Autor entity)
         {
-            throw new NotImplementedException();
+            _context.Set<Autor>().Update(entity);
+            _context.SaveChanges();
         }
     }
 }

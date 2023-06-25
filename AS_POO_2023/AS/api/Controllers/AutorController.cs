@@ -1,5 +1,8 @@
 using AutoMapper;
+using Domain.DTOs;
+using Domain.Entities;
 using Domain.Interfaces;
+using Domain.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace api.Controllers
@@ -15,6 +18,31 @@ namespace api.Controllers
             _autorRepository = autorRepository;
             _mapper = mapper;
         }
+
+
+ 
+
+
+
+
+
+
+
+
+
+        private IActionResult HttpMessageOk(dynamic data = null)
+        {
+            if (data == null)
+                return NoContent();
+            else
+                return Ok(new { data });
+        }
+
+        private IActionResult HttpMessageError(string message = "")
+        {
+            return BadRequest(new { message });
+        }
+
     }
 }
 
