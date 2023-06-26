@@ -32,7 +32,8 @@ namespace Data.Types
             
             builder.HasOne(e => e.Usuario)
                 .WithMany()
-                .HasForeignKey(e => e.UsuarioId);            
+                .HasForeignKey(e => e.UsuarioId)
+                .IsRequired();  
         }
     }
 }

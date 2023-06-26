@@ -4,6 +4,8 @@ namespace Domain.ViewModels
     {
         public string Nome { get; set; }
         public string Telefone { get; set; }
-        public List<int> LivrosIds { get; set; }
+
+        public List<LivroViewModel> Livros { get; set; }
+        
     }
 }

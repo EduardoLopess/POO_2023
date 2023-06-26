@@ -7,6 +7,7 @@ namespace Domain.Entities
         public string Genero { get; set; }
 
         // Relacionamento MUITO pra MUITOS, onde um livro tem muitos autores
-        public IList<Autor> Autores { get; set; } = new List<Autor>();
+        public IList<Autor> Autores { get; set; }
+        
     }
 }

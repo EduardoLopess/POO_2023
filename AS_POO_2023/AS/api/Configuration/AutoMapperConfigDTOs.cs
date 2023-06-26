@@ -6,12 +6,20 @@ namespace api.Configuration
 {
     public class AutoMapperConfigDTOs : Profile
     {
-        public AutoMapperConfigDTOs ()  
+        public AutoMapperConfigDTOs()
         {
-            CreateMap<Livro, LivroDTO>().PreserveReferences().MaxDepth(0);
-            CreateMap<Autor, AutorDTO>().PreserveReferences().MaxDepth(0);
-            CreateMap<Usuario, UsuarioDTO>().PreserveReferences().MaxDepth(0);
-            CreateMap<Emprestimo, EmprestimoDTO>().PreserveReferences().MaxDepth(0);
+            CreateMap<Autor, AutorDTO>()
+                .ForMember(dest => dest.Livros, opt => opt.MapFrom(src => src.Livros));
+
+            CreateMap<Livro, LivroDTO>()
+                .ForMember(dest => dest.Autores, opt => opt.MapFrom(src => src.Autores));
+
+            CreateMap<Usuario, UsuarioDTO>()
+                .ForMember(dest => dest.Emprestimos, opt => opt.MapFrom(src => src.Emprestimos));
+
+            CreateMap<Emprestimo, EmprestimoDTO>()
+                .ForMember(dest => dest.Usuario, opt => opt.MapFrom(src => src.Usuario))
+                .ForMember(dest => dest.Livro, opt => opt.MapFrom(src => src.Livro));
         }
     }
 }

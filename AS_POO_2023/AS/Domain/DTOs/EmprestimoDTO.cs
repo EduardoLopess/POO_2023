@@ -6,7 +6,7 @@ namespace Domain.DTOs
     {
         public int Id { get; set; }
         public DateTime DataEmprestimo { get; set; }
-        public DateTime DataDevolucao { get; set; }
+        public DateTime? DataDevolucao { get; set; }
             
         // Relacionamento com Livro
         public int LivroId { get; set; }

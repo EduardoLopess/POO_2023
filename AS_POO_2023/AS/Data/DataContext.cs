@@ -2,17 +2,19 @@ using Data.Types;
 using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace Data
 {
     public class DataContext : DbContext
     {
+        public DataContext() { }
         public string DbPath { get; }
-        public DataContext()
+        public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
             string path = Directory.GetCurrentDirectory();
             DbPath = System.IO.Path.Join(path, "bancoLocal.db");
         }
-
+    
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             => optionsBuilder.UseSqlite($"Data Source = {DbPath}");
 

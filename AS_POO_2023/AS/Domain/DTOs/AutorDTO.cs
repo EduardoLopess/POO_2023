@@ -8,7 +8,7 @@ namespace Domain.DTOs
         public string Nome { get; set; }
         public string Telefone { get; set; }
 
-        //ADD os IDs na controller quando chamar Autor
-        public List<int> LivroIds { get; set; }
+        //contém os detalhes completos dos livros escritos pelo autor
+        public IList<LivroDTO> Livros { get; set; }
     }
 }

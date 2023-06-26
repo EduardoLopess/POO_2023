@@ -6,8 +6,8 @@ namespace Data.Repository
 {
     public class LivroRepository : ILivroRepository
     {
-        private readonly DbContext _context;
-        public LivroRepository(DbContext context)
+        private readonly DataContext _context;
+        public LivroRepository(DataContext context)
         {
             _context = context;
         }

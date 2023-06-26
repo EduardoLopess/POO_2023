@@ -6,8 +6,8 @@ namespace Data.Repository
 {
     public class AutorRepository : IAutorRepository
     {
-        private readonly DbContext _context;
-        public AutorRepository(DbContext context)
+        private readonly DataContext _context;
+        public AutorRepository(DataContext context)
         {
             _context = context;
         }
@@ -33,8 +33,12 @@ namespace Data.Repository
 
         public void Delete(int entityId)
         {
-            _context.Set<Autor>().Remove(GetById(entityId));
-            _context.SaveChanges();
+             var autor = GetById(entityId);
+            if (autor != null)
+            {
+                _context.Set<Autor>().Remove(autor);
+                _context.SaveChanges();
+            }
         }
 
         public void Update(Autor entity)
@@ -42,5 +46,6 @@ namespace Data.Repository
             _context.Set<Autor>().Update(entity);
             _context.SaveChanges();
         }
-    }
+
+    }  
 }

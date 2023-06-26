@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NPXgl9Ev2hoO6iUtraPEg5g6foFK2bImxazKvxyIdrB4PoiKJ4I9gNNRti5T2VuZHL3yHDv4jNKIrIOhsMHexw==",
+  "dgSpecHash": "S0wu+sXaj3dKXqDEF3/KMbdymfENQemzs013x2DMW6qQk1+c2UB6XD98lf/UppFIHHjTD7C4Oim5UQpMnUjeFA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Edu\\Desktop\\AS_POO_2023\\AS\\api\\api.csproj",
   "expectedPackageFiles": [
@@ -10,9 +10,9 @@
     "C:\\Users\\Edu\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.5\\microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",
     "C:\\Users\\Edu\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Edu\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.7\\microsoft.data.sqlite.core.7.0.7.nupkg.sha512",
-    "C:\\Users\\Edu\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.7\\microsoft.entityframeworkcore.7.0.7.nupkg.sha512",
-    "C:\\Users\\Edu\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.7\\microsoft.entityframeworkcore.abstractions.7.0.7.nupkg.sha512",
-    "C:\\Users\\Edu\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.7\\microsoft.entityframeworkcore.analyzers.7.0.7.nupkg.sha512",
+    "C:\\Users\\Edu\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.8\\microsoft.entityframeworkcore.7.0.8.nupkg.sha512",
+    "C:\\Users\\Edu\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.8\\microsoft.entityframeworkcore.abstractions.7.0.8.nupkg.sha512",
+    "C:\\Users\\Edu\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.8\\microsoft.entityframeworkcore.analyzers.7.0.8.nupkg.sha512",
     "C:\\Users\\Edu\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.7\\microsoft.entityframeworkcore.design.7.0.7.nupkg.sha512",
     "C:\\Users\\Edu\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.7\\microsoft.entityframeworkcore.relational.7.0.7.nupkg.sha512",
     "C:\\Users\\Edu\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\7.0.7\\microsoft.entityframeworkcore.sqlite.7.0.7.nupkg.sha512",

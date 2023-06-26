@@ -8,7 +8,7 @@ namespace Domain.DTOs
         public string Titulo { get; set; }
         public string Genero { get; set; }
 
-        // Relacionamento MUITO pra MUITOS, onde um livro tem muitos autores
-        public IList<AutorDTO> Autores { get; set; }
+        //contém os nomes dos autores relacionados a esse livro.
+        public IList<string> Autores { get; set; }
     }
 }

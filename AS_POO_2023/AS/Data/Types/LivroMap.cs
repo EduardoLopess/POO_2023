@@ -24,20 +24,20 @@ namespace Data.Types
                 .HasMaxLength(100)
                 .IsRequired();
 
-            builder.HasMany(l => l.Autores)
-                .WithMany()
-                .UsingEntity<Dictionary<string, object>>(
-                    "LivroAutor",
-                    l => l.HasOne<Autor>()
-                        .WithMany().HasForeignKey("AutorId"),
-                    l => l.HasOne<Livro>()
-                        .WithMany().HasForeignKey("LivroId"),
-                    l =>
-                    {
-                        l.HasKey("LivroId", "AutorId");
-                        l.ToTable("LivroAutor");
-                    }
-                );
+            // builder.HasMany(l => l.Autores)
+            //     .WithMany()
+            //     .UsingEntity<Dictionary<string, object>>(
+            //         "LivroAutor",
+            //         l => l.HasOne<Autor>()
+            //             .WithMany().HasForeignKey("AutorId"),
+            //         l => l.HasOne<Livro>()
+            //             .WithMany().HasForeignKey("LivroId"),
+            //         l =>
+            //         {
+            //             l.HasKey("LivroId", "AutorId");
+            //             l.ToTable("LivroAutor");
+            //         }
+            //     );
 
             
         }
