@@ -41,18 +41,19 @@ namespace api.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateAsync(UsuarioViewModel modelUsuario, EnderecoViewModel modelEndereco)
+        public async Task<IActionResult> CreateAsync([FromBody] UsuarioViewModel createModel)
         {
             if (!ModelState.IsValid) return HttpMessageError("Dados incorretos");
 
-            var usuario = _mapper.Map<Usuario>(modelUsuario);
-            var endereco = _mapper.Map<Endereco>(modelEndereco);
+            var usuario = _mapper.Map<Usuario>(createModel);
+            var endereco = _mapper.Map<Endereco>(createModel);
 
             await _usuarioRepository.CreateAsync(usuario, endereco);
 
             var usuarioDTO = _mapper.Map<UsuarioDTO>(usuario);
             return HttpMessageOk(usuarioDTO);
         }
+
 
 
         [HttpPut("{id}")]

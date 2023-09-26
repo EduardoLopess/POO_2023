@@ -41,18 +41,49 @@ namespace api.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateAsync(EnderecoViewModel enderecoModel)
+        public async Task<IActionResult> CreateAsync(EnderecoViewModel enderecoModel, int usuarioId)
         {
-            if (!ModelState.IsValid) return HttpMessageError("Dados incorretos");
+            if (!ModelState.IsValid)
+            {
+                return BadRequest("Dados incorretos");
+            }
             var endereco = _mapper.Map<Endereco>(enderecoModel);
-
-            await _enderecoRepository.CreateAsync(endereco);
             
+            try
+            {
+                await _enderecoRepository.CreateAsync(endereco, usuarioId);
+                return Ok("Endereço criado com sucesso");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erro interno do servidor: {ex.Message}");
+            }
         }
 
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update (int id, EnderecoViewModel model)
+        {
+            if (!ModelState.IsValid) return HttpMessageError("Dados incorretos");
 
+            var endereco = _mapper.Map<Endereco>(model);
+            endereco.Id = id;
+            await _enderecoRepository.UpdateAsync(endereco);
 
-        
+            var enderecoDTO = _mapper.Map<UsuarioDTO>(endereco);
+            return
+                HttpMessageOk(enderecoDTO);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete (int id)
+        {
+            var endereco = await _enderecoRepository.GetByIdAsync(id);
+            if (endereco == null) return NotFound();
+
+            await _enderecoRepository.DeleteAsync(id);
+            return
+                HttpMessageOk(id);
+        }
 
 
         private IActionResult HttpMessageOk(dynamic data = null)
