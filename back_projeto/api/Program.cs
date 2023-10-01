@@ -1,7 +1,7 @@
 using api.Configuration;
 using Data;
 using Data.Repository;
-using Domain.Intarfaces;
+using Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

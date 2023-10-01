@@ -10,6 +10,6 @@ namespace Domain.Entities
         public string Email { get; set; }
 
         public IList<Endereco> Enderecos { get; set; }
-        //public virtual Login Login { get; set; }
+        
     }
 }

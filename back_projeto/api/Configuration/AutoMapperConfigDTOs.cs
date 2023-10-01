@@ -8,9 +8,11 @@ namespace api.Configuration
     {
         public AutoMapperConfigDTOs()
         {
-            CreateMap<Usuario, UsuarioDTO>();
+            CreateMap<Usuario, UsuarioDTO>()
+                .ForMember(dest => dest.NomeCompleto, map => map.MapFrom(src => $"{src.Nome} {src.SobreNome}"));
+                    
             CreateMap<Endereco, EnderecoDTO>();
                    
         }
     }
-}
+} 

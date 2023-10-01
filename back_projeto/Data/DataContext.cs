@@ -12,7 +12,7 @@ namespace Data
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
             string path = Directory.GetCurrentDirectory();
-            DbPath = System.IO.Path.Join(path, "bancoLocal.db");
+            DbPath = Path.Join(path, "bancoLocal.db");
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

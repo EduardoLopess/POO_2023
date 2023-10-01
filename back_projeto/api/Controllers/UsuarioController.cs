@@ -1,7 +1,7 @@
 using AutoMapper;
 using Domain.DTOs;
 using Domain.Entities;
-using Domain.Intarfaces;
+using Domain.Interfaces;
 using Domain.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 

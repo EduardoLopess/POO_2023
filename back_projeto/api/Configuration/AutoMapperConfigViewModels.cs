@@ -8,8 +8,19 @@ namespace api.Configuration
     {
         public AutoMapperConfigViewModels()
         {
-            CreateMap<UsuarioViewModel, Usuario>();
-            CreateMap<EnderecoViewModel, Endereco>();
+            CreateMap<UsuarioViewModel, Usuario>()
+                .ForMember(dest => dest.Nome, opt => opt.MapFrom(src => src.Nome))
+                .ForMember(dest => dest.SobreNome, opt => opt.MapFrom(src => src.SobreNome))
+                .ForMember(dest => dest.Telefone, opt => opt.MapFrom(src => src.Telefone))
+                .ForMember(dest => dest.CPF, opt => opt.MapFrom(src => src.CPF))
+                .ForMember(dest => dest.Email, opt => opt.MapFrom(src => src.Email))
+                .ForMember(dest => dest.Enderecos, opt => opt.MapFrom(src => src.EnderecoViews)); // Mapeamento da lista de endereços
+
+            
+            CreateMap<EnderecoViewModel, Endereco>()
+                .ForMember(dest => dest.Logradouro, opt => opt.MapFrom(src => src.Logradouro))
+                .ForMember(dest => dest.NumeroCasa, opt => opt.MapFrom(src => src.NumeroCasa))
+                .ReverseMap();
         }
     }
 }

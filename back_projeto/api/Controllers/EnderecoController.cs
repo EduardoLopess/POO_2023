@@ -1,7 +1,7 @@
 using AutoMapper;
 using Domain.DTOs;
 using Domain.Entities;
-using Domain.Intarfaces;
+using Domain.Interfaces;
 using Domain.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
@@ -69,7 +69,7 @@ namespace api.Controllers
             endereco.Id = id;
             await _enderecoRepository.UpdateAsync(endereco);
 
-            var enderecoDTO = _mapper.Map<UsuarioDTO>(endereco);
+            var enderecoDTO = _mapper.Map<EnderecoDTO>(endereco);
             return
                 HttpMessageOk(enderecoDTO);
         }
