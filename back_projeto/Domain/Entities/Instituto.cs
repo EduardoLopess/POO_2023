@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Domain.Enums;
 
 namespace Domain.Entities
 {
@@ -13,7 +10,9 @@ namespace Domain.Entities
         public string Tipo { get; set; }
 
         public Endereco Endereco { get; set; }
-        public IList<Volutariado> Voluntariados { get; set; } 
+        public PerfilAcesso Perfil { get; set; } //Enum
+        public IList<Voluntariado> Voluntariados { get; set; }
+        public IList<MeterialDoacao> MateriasDoacao { get; set; } 
     }
 }   
 

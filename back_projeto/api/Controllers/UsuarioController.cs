@@ -40,20 +40,39 @@ namespace api.Controllers
                 HttpMessageOk(usuarioDTO);
         }
 
+        // [HttpPost]
+        // public async Task<IActionResult> CreateAsync([FromBody] UsuarioViewModel createModel)
+        // {
+        //     if (!ModelState.IsValid) return HttpMessageError("Dados incorretos");
+
+        //     var usuario = _mapper.Map<Usuario>(createModel);
+        //     var endereco = _mapper.Map<Endereco>(createModel);
+
+        //     await _usuarioRepository.CreateAsync(usuario, endereco);
+
+        //     var usuarioDTO = _mapper.Map<UsuarioDTO>(usuario);
+        //     return HttpMessageOk(usuarioDTO);
+        // }
+
         [HttpPost]
         public async Task<IActionResult> CreateAsync([FromBody] UsuarioViewModel createModel)
         {
             if (!ModelState.IsValid) return HttpMessageError("Dados incorretos");
 
             var usuario = _mapper.Map<Usuario>(createModel);
-            var endereco = _mapper.Map<Endereco>(createModel);
 
-            await _usuarioRepository.CreateAsync(usuario, endereco);
+            // Mapeie os endereços de UsuarioViewModel para Endereco
+            var enderecos = _mapper.Map<List<Endereco>>(createModel.EnderecoViews);
+
+            // Associe os endereços ao usuário
+            usuario.Enderecos = enderecos;
+
+            // Salve o usuário e os endereços no banco de dados
+            await _usuarioRepository.CreateAsync(usuario , enderecos.FirstOrDefault());
 
             var usuarioDTO = _mapper.Map<UsuarioDTO>(usuario);
             return HttpMessageOk(usuarioDTO);
         }
-
 
 
         [HttpPut("{id}")]

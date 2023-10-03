@@ -1,3 +1,5 @@
+using Domain.Entities;
+
 namespace Domain.DTOs
 {
     public class EnderecoDTO
@@ -11,6 +13,12 @@ namespace Domain.DTOs
         public string Cidade { get; set; }
         
 
-        public UsuarioDTO UsuarioDTO { get; set; }
+        //public UsuarioDTO UsuarioDTO { get; set; }
+        public int UsuarioId { get; set; }
+        //public InstitutoDTO InstitutoDTO { get; set; }
+        public int IntitutoId { get; set; }
+        //public PontoDoacaoDTO PontoDoacaoDTO { get; set; }
+        public int PontoDoacaoId { get; set; }
+
     }
 }

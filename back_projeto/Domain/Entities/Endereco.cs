@@ -10,12 +10,14 @@ namespace Domain.Entities
         public int Cep { get; set; }
         public string Cidade { get; set; }
         
-
         //Relacionamentos
         public Usuario Usuario { get; set; }
-        public int UsuarioId { get; set; } //FK
-        //public Instituto Instituto { get; set; }
-        //public Voluntariado Voluntariado { get; set; }
-        //public PontosColetaDoacao PontosColetaDoacao { get; set; }
+        //public int UsuarioId { get; set; } //fk
+        public Instituto Instituto { get; set; }
+        //public int InstitutoId { get; set; } // fk
+        public Voluntariado Voluntariado { get; set; }
+        //public int VoluntariadoId { get; set; } //fk
+        public PontoDoacao PontoDoacao { get; set; }
+        //public int PontoDoacaoId { get; set; } //fk
     }
 }

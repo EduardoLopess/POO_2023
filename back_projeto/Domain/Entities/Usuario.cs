@@ -1,3 +1,5 @@
+using Domain.Enums;
+
 namespace Domain.Entities
 {
     public class Usuario
@@ -8,8 +10,10 @@ namespace Domain.Entities
         public string Telefone { get; set; }
         public string CPF { get; set; }
         public string Email { get; set; }
+        public string SenhaHash { get; set; }
 
         public IList<Endereco> Enderecos { get; set; }
-        
+        public Login Login { get; set; }
+        public PerfilAcesso Perfil { get; set; } //Enum
     }
 }

@@ -3,8 +3,8 @@ using Domain.Interfaces;
 
 namespace Domain.Intarfaces
 {
-    public interface IVoluntariadoRepository : IBaseRepository<Volutariado>
+    public interface IVoluntariadoRepository : IBaseRepository<Voluntariado>
     {
-        Task CreateAsync(Volutariado entity, Instituto instituto);
+        Task CreateAsync(Voluntariado entity, Instituto instituto);
     }
 }

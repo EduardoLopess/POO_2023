@@ -17,10 +17,9 @@ namespace api.Configuration
                 .ForMember(dest => dest.Enderecos, opt => opt.MapFrom(src => src.EnderecoViews)); // Mapeamento da lista de endereços
 
             
-            CreateMap<EnderecoViewModel, Endereco>()
-                .ForMember(dest => dest.Logradouro, opt => opt.MapFrom(src => src.Logradouro))
-                .ForMember(dest => dest.NumeroCasa, opt => opt.MapFrom(src => src.NumeroCasa))
-                .ReverseMap();
+            CreateMap<EnderecoViewModel, Endereco>();
+                
+            
         }
     }
 }

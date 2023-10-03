@@ -27,6 +27,21 @@ builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<IEnderecoRepository, EnderecoRepository>();    
 
 
+//Ignora respostas NULLAS
+builder.Services.AddControllers()
+    .AddNewtonsoftJson(options =>
+    {
+        options.SerializerSettings.NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore;
+    });
+
+//Trava a refencia circular e json Infinito Funcioa por algum motivo `-`
+// builder.Services.AddControllers()
+//     .AddNewtonsoftJson(options =>
+//     {
+//         options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+//         options.SerializerSettings.MaxDepth = 999999999; // Define o nível máximo de profundidade
+//     });
+
 
 var app = builder.Build();
 
