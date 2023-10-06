@@ -3,6 +3,7 @@ using System;
 using Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20231005234323_Resto")]
+    partial class Resto
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.0");
@@ -109,9 +112,6 @@ namespace Data.Migrations
                     b.Property<string>("Email")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("InstitutoId")
-                        .HasColumnType("INTEGER");
-
                     b.Property<string>("SenhaHash")
                         .HasColumnType("TEXT");
 
@@ -119,8 +119,6 @@ namespace Data.Migrations
                         .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("InstitutoId");
 
                     b.HasIndex("UsuarioId")
                         .IsUnique();
@@ -292,19 +290,11 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Domain.Entities.Login", b =>
                 {
-                    b.HasOne("Domain.Entities.Instituto", "Instituto")
-                        .WithMany()
-                        .HasForeignKey("InstitutoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("Domain.Entities.Usuario", "Usuario")
                         .WithOne("Login")
                         .HasForeignKey("Domain.Entities.Login", "UsuarioId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Instituto");
 
                     b.Navigation("Usuario");
                 });

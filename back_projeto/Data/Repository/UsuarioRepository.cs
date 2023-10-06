@@ -63,6 +63,16 @@ namespace Data.Repository
             }    
         }
 
+        public bool InscreverUsuarioEmVoluntariado(int usuarioId, int voluntariadoId)
+        {
+            throw new NotImplementedException();
+
+        }
+
+        public bool CancelarInscricaoUsuarioEmVoluntariado(int usuarioId, int voluntariadoId)
+        {
+            throw new NotImplementedException();
+        }
 
     }
 }

@@ -9,5 +9,6 @@ namespace Domain.DTOs
         public string Email { get; set; }
 
         public IList<EnderecoDTO> EnderecosDTO { get; set; }
+        public IList<VoluntariadoDTO> VoluntariadosInscritosDTO { get; set; } 
     }
 }

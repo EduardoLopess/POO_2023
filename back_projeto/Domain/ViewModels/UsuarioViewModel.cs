@@ -8,6 +8,7 @@ namespace Domain.ViewModels
         public string CPF { get; set; }
         public string Email { get; set; }
 
-        public List<EnderecoViewModel> EnderecoViews { get; set; }
+        public List<EnderecoViewModel> EnderecoViewModel { get; set; }
+        public IList<VoluntariadoViewModel> VoluntariadosInscritosViewModel { get; set; }
     }
 }

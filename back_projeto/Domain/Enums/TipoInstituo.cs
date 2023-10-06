@@ -1,6 +1,6 @@
 namespace Domain.Enums
 {
-    public class TipoInstituo
+    public enum TipoInstituo
     {
         
     }

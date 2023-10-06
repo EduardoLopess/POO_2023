@@ -13,6 +13,7 @@ namespace Domain.Entities
         public string SenhaHash { get; set; }
 
         public IList<Endereco> Enderecos { get; set; }
+        public IList<Voluntariado> VoluntariadosInscritos { get; set; } // Lista de voluntariados em que o usuário está inscrito
         public Login Login { get; set; }
         public PerfilAcesso Perfil { get; set; } //Enum
     }
