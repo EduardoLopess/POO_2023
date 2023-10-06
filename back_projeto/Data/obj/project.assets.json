@@ -1277,34 +1277,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Edu\\.nuget\\packages\\": {}
+    "C:\\Users\\dudul\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Edu\\Desktop\\back_projeto\\Data\\Data.csproj",
+      "projectUniqueName": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\poo_2023\\POO_2023\\back_projeto\\Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "C:\\Users\\Edu\\Desktop\\back_projeto\\Data\\Data.csproj",
-      "packagesPath": "C:\\Users\\Edu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Edu\\Desktop\\back_projeto\\Data\\obj\\",
+      "projectPath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\poo_2023\\POO_2023\\back_projeto\\Data\\Data.csproj",
+      "packagesPath": "C:\\Users\\dudul\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\poo_2023\\POO_2023\\back_projeto\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Edu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\dudul\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Edu\\Desktop\\back_projeto\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Edu\\Desktop\\back_projeto\\Domain\\Domain.csproj"
+            "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\poo_2023\\POO_2023\\back_projeto\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\dudul\\OneDrive\\Área de Trabalho\\poo_2023\\POO_2023\\back_projeto\\Domain\\Domain.csproj"
             }
           }
         }
@@ -1350,7 +1348,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -8,4 +8,8 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Domain
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\Edu\Desktop\back_projeto\Domain\
+=======
+build_property.ProjectDir = c:\Users\dudul\OneDrive\Área de Trabalho\poo_2023\POO_2023\back_projeto\Domain\
+>>>>>>> 847275f5ae365e78b65ddff5520896cbd18ae457
